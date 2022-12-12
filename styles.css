@@ -160,24 +160,27 @@ footer .fin{
     border-radius: 30%;
 }
 
-.container_res{
+#Resultados .container_res{
     display: flex;
     justify-content: space-between;
     column-gap: 10%;
-    max-width: 1200px;
-    margin: auto;
+    width: 1200px;
+    object-fit: cover;
+
 }
 
 .box__res{
     color:black;
     width: 400px;
     display: grid;
-    grid-template-columns: repeat(3,2);
     justify-content: center;
     text-align: center;
-    padding-inline: 15%;
+    padding-inline: 3%;
     font-size: 30px;
     background-color:    #c0c9ee;
+    margin-left: 3%;
+   
+    
     
 }
 
@@ -198,7 +201,7 @@ footer .fin{
 }
 
 
-li{
+#Tecnica li{
     
     margin-left: 3%;
     margin-right: 1%;
