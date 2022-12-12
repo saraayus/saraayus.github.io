@@ -14,13 +14,16 @@
         Proyecto CLOUD: Análisis de los vuelos en EEUU
     </title>
 
+    <link rel="stylesheet" href="materialize.css">
+
     <link rel="stylesheet" href="styles.css">
 </head> 
 
 
 <body>
+     
 
-        <div class = "container">
+        <div class = "containerA">
 
             <div class = "navbar">
                 <img src="./img/logo.png" class ="logo" alt="Main logo">
@@ -89,10 +92,123 @@
 
 
         <div class ="seccion" id = "Rendimiento">
+            
             <h2>Grápicos de rendimiento</h2>
-            <p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="carousel center-align">Aeropuertos Origen
 
-            </p>
+                                <div class ="carousel-item" >
+                                    <img src="./img/cpuOrigen.png"  >
+                                </div>
+                                <div class ="carousel-item" >
+                                    <img src="./img/nbytesOrigen.png" >
+                                </div>
+                                <div class ="carousel-item" >
+                                    <img src="./img/npackOrigen.png" >
+                                </div>
+                                <div class ="carousel-item" >
+                                    <img src="./img/diskOrigen.png">
+                                </div>
+                            </div>
+
+                            <div class="carousel center-align">Aeropuertos Destino
+
+                                <div class ="carousel-item" >
+                                    <img src="./img/cpuDestino.png"  >
+                                </div>
+                                <div class ="carousel-item" >
+                                    <img src="./img/nbytesDestino.png" >
+                                </div>
+                                <div class ="carousel-item" >
+                                    <img src="./img/npackDestino.png" >
+                                </div>
+                                <div class ="carousel-item" >
+                                    <img src="./img/diskDestino.png">
+                                </div>
+                            </div>
+
+
+                            <div class="carousel center-align">Fecha
+
+                                <div class ="carousel-item" >
+                                    <img src="./img/cpuFecha.png"  >
+                                </div>
+                                <div class ="carousel-item" >
+                                    <img src="./img/nbytesFecha.png" >
+                                </div>
+                                <div class ="carousel-item" >
+                                    <img src="./img/npackFecha.png" >
+                                </div>
+                                <div class ="carousel-item" >
+                                    <img src="./img/diskFecha.png">
+                                </div>
+                            </div>
+
+
+                            <div class="carousel center-align">Is (características de vuelo) 
+                            
+                                <div class ="carousel-item" >
+                                    <img src="./img/cpuIs.png"  >
+                                </div>
+                                <div class ="carousel-item" >
+                                    <img src="./img/nbytesIs.png" >
+                                </div>
+                                <div class ="carousel-item" >
+                                    <img src="./img/npackIs.png" >
+                                </div>
+                                <div class ="carousel-item" >
+                                    <img src="./img/diskIs.png">
+                                </div>
+                            </div>
+
+
+                            <div class="carousel center-align"> Aerolineas
+                            
+                                <div class ="carousel-item" >
+                                    <img src="./img/cpuAerolinea.png"  >
+                                </div>
+                                <div class ="carousel-item" >
+                                    <img src="./img/nbytesAerolinea.png" >
+                                </div>
+                                <div class ="carousel-item" >
+                                    <img src="./img/npackAerolinea.png" >
+                                </div>
+                                <div class ="carousel-item" >
+                                    <img src="./img/diskAerolinea.png">
+                                </div>
+                            </div>
+
+                            <div class="carousel center-align"> Asientos Vacíos
+                            
+                                <div class ="carousel-item" >
+                                    <img src="./img/cpuAsientos.png"  >
+                                </div>
+                                <div class ="carousel-item" >
+                                    <img src="./img/nbytesAsientos.png" >
+                                </div>
+                                <div class ="carousel-item" >
+                                    <img src="./img/npackAsientos.png" >
+                                </div>
+                                <div class ="carousel-item" >
+                                    <img src="./img/diskAsientos.png">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                   
+                
+
+                <!--Materialize.js-->
+                <script src="materialize.js"></script>
+
+
+                <!--main.js-->
+                <script src="main.js"></script>
+            </div>
+            
 
         </div>
 
@@ -117,17 +233,12 @@
             <h2>Link Github</h2>
 
             <a href="https://github.com/saraayus/CLO" target="_blank"> 
-            <img src="./img/github.png" class ="github" alt="Main logo">
-            
-        </a>
+                <img src="./img/github.png" class ="github" alt="Main logo">
+            </a>
 
         </div>
 </body>
 
-
-<div class="foot link">
-
-</div>
 
 
 <footer >

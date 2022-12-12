@@ -28,7 +28,7 @@ h2{
 
 }
 
-.container{   
+.containerA{   
     height: 70px;
     background-color:    #38598b;
 
@@ -107,6 +107,33 @@ footer .fin{
 #Link a{
     display:flex;
     margin:0px auto;
+}
+
+
+.carousel .carousel-item{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+   
+    
+
+}
+
+
+
+
+.carousel .carousel-item img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.carousel{
+    font-size: 30px;
+    margin-top: 30px;
+
 }
 
 
