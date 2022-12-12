@@ -163,6 +163,7 @@ footer .fin{
 .container_res{
     display: flex;
     justify-content: space-between;
+    column-gap: 10%;
     max-width: 1200px;
     margin: auto;
 }
@@ -171,16 +172,24 @@ footer .fin{
     color:black;
     width: 400px;
     display: grid;
-    grid-auto-columns: min-content;
+    grid-template-columns: repeat(3,2);
+    justify-content: center;
     text-align: center;
-    padding: 40px;
+    padding-inline: 15%;
     font-size: 30px;
+    background-color:    #c0c9ee;
+    
 }
 
 .graf{
+    display:flex;
     width: 250px;
     height: 250px;
-    padding-inline: center;
+    padding-top: 10px;
+    justify-content: center;
+    padding-left: auto;
+    padding-right: auto;
+
     
 }
 
