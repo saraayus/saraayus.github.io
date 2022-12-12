@@ -170,18 +170,18 @@ footer .fin{
 .box__res{
     color:black;
     width: 400px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-auto-columns: min-content;
     text-align: center;
     padding: 40px;
-
     font-size: 30px;
 }
 
 .graf{
     width: 250px;
     height: 250px;
-    align-self: center;
+    padding-inline: center;
+    
 }
 
 .lista{
