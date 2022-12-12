@@ -124,7 +124,7 @@ footer .fin{
 
 
 .container{
-    min-height: fit-content;
+   height: 2600px;
 }
 
 .carousel .carousel-item img{
