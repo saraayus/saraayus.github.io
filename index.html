@@ -52,7 +52,9 @@
                 mediante este proyecto se analizan los datos de los viajes reservados y sus características. De esta manera las aerolíneas sabrán qué tipo
                  de viajes prefieren los clientes y aquello que deben reforzar o cambiar, todo ello para lograr el objetivo anteriormente descrito. 
             </p>
+            <div class="borde "></div>
         </div>
+        
             
 
         <div class ="seccion" id= "BigData">
@@ -61,6 +63,7 @@
                 Teniendo en cuenta la gran cantidad de información de la que disponemos sobre tantos vuelos, y que además esa información se irá actualizando 
                 e irá aumentando con el paso del tiempo; si queremos sacar conclusiones lo más rápido y eficaz posible, es necesario hacer uso del Big Data.
             </p>
+            <div class="borde "></div>
 
         </div>
 
@@ -70,15 +73,40 @@
                 Los datos analizados han sido obtenidos de Kaggle, un portal con gran cantidad de datasets. Los datos provienen de los vuelos reservados a 
                 compañías aéreas de EE.UU durante unos meses del último año, incluyendo datos relativos tanto al billete como al trayecto de cada vuelo reservado.  
             </p>
+            <div class="borde "></div>
 
         </div>
 
 
         <div class ="seccion" id = "Manual">
             <h2>Manual de usuario para los scripts</h2>
-            <p>
+            <p>Todo el código del proyecto ha sido dividido entre distintos .py y almacenados en la carpeta 'code' del repositorio. Para ejecutarlos y obtener los csv's, 
+            se recomienda hacer el uso de la plataforma Google Cloud.</p>
+            
+            <p>Pasos a seguir:</p>
+            <div class="lista">
+                <p> 0. Como paso previo, debemos registrarnos y obtener créditos de cualquier forma en la plataforma, además de descargar el dataset del link proporcionado.</p>
+                <div class="borde-paf "></div>
+                <p>1. Crear un Bucket dentro de Cloud Storage de clase standart y cargar ahí el dataset, en una carpeta llamada 'input'.</p>
+                <div class="borde-paf "></div>
+                <p>2. Crear un clúster. Para ello abrir la consola cloud shell y escribir lo siguiente: gcloud dataproc clusters create example-cluster --region europe-west6 
+                --enable-component-gateway --master-boot-disk-size 50GB --worker-boot-disk-size 50GB Además, asegurarse de que esta en estado 'En ejecución' en el apartado 
+                Clústeres de Dataproc.</p>
+                <div class="borde-paf "></div>
+                <p>3. Subir los archivos a ejecutar al explorador de la shell.</p>
+                <div class="borde-paf "></div>
+                <p>4. Escribir por consola BUCKET=gs://, donde sería el nombre del bucket creado anteriormente.</p>
+                <div class="borde-paf "></div>
+                <p>5. Ejecutar por consola el siguiente comando por cada archivo que se desea probar: gcloud dataproc jobs submit pyspark --cluster example-cluster --region=europe-west6 .py 
+                -- $BUCKET/input $BUCKET/ Donde es el nombre del archivo que se desea ejecutar y es el nombre de la carpeta (sin crear) del bucket donde queremos que se guarde el csv 
+                resultante.</p>
+                <div class="borde-paf "></div>
+                <p>6. Para recuperar los resultados nos dirigiremos a la carpeta del bucket.</p>
+                <p>7. Detener la ejecución del cluster.</p>
+            </div>
+            
 
-            </p>
+            <div class="borde "></div>
 
         </div>
 
@@ -87,6 +115,7 @@
             <p>
 
             </p>
+            <div class="borde "></div>
 
         </div>
 
@@ -195,6 +224,7 @@
                                     <img src="./img/diskAsientos.png">
                                 </div>
                             </div>
+                            <div class="borde "></div>
                         </div>
                         
                     </div>
@@ -214,9 +244,59 @@
 
         <div class ="seccion" id = "Resultados">
             <h2>Resultados</h2>
-            <p>
+            <div class="container_res">
+                <div class="box__res">
+                    <img src="./img/resOrigen.png" class="graf">
+                    <h3>Orígenes</h3>
+                        <h6>Ningún aeropuerto origen destaca como el más popular</h6>
+                        
+                </div>
 
-            </p>
+                <div class="box__res">
+                    <img src="./img/resDestino.png" class="graf">
+                    <h3>Destinos</h3>
+                        <h6>Ningún aeropuerto destino destaca como el más popular</h6>
+                        
+                </div>
+
+                <div class="box__res">
+                    <img src="./img/resFechas.png" class="graf">
+                    <h3>Fechas</h3>
+                        <h6>Las fechas con más billetes comprados son los meses de verano, quedando abril y noviembre muy por debajo </h6>
+                        
+                </div>
+
+                
+                
+            </div>
+
+            <div class="container_res">
+                <div class="box__res">
+                    <img src="./img/resIsTrue.png" class="graf">
+                    <h3>Opciones</h3>
+                        <h6>Se puede observar que es importante para los clientes los vuelos directos, y 
+                            que tienen menos interes que sea económico o reembolsable.</h6>
+                        
+                </div>
+
+                <div class="box__res">
+                    <img src="./img/resAerolineas.png" class="graf">
+                    <h3>Aerolíneas</h3>
+                        <h6>Entre las aerolíneas más utilizadas destancas 3, quedando 2 más rezagadas</h6>
+                        
+                </div>
+
+                <div class="box__res">
+                    <img src="./img/resAsientos.png" class="graf">
+                    <h3>Asientos</h3>
+                        <h6>Sa observa que hacia todos los destinos el máximo de asientos que sobran son no más de 7</h6>
+                        
+                </div>
+
+                
+                
+            </div>
+            <div class="borde "></div>
 
         </div>
 
@@ -226,17 +306,11 @@
             <p>
 
             </p>
+            <div class="borde "></div>
 
         </div>
 
-        <div class ="seccion" id = "Link">
-            <h2>Link Github</h2>
-
-            <a href="https://github.com/saraayus/CLO" target="_blank"> 
-                <img src="./img/github.png" class ="github" alt="Main logo">
-            </a>
-
-        </div>
+        
 </body>
 
 
@@ -245,6 +319,7 @@
 
     <div class="container_footer">
 
+        
         <div class="box__footer">
             <h3>Autores</h3>
                 <h6>Sara Ayuso de Santos</h6>
@@ -264,7 +339,16 @@
       
     </div>
 
+    <div id = "Link">
+        <a href="https://github.com/saraayus/CLO" target="_blank"> 
+            <img src="./img/github.png" class ="github" alt="Main logo">
+        </a>
+
+    </div>
+
     <h2 class="fin">Análisis de vuelos en EEUU</h2>
+    <div class="borde-n "></div>
+    
 </footer>
 
 

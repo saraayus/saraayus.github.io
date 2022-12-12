@@ -124,7 +124,8 @@ footer .fin{
 
 
 .container{
-   height: fit-content;
+   height:fit-content;
+   
 }
 
 .carousel .carousel-item img{
@@ -138,4 +139,52 @@ footer .fin{
 
 }
 
+.borde{
+    background-color:    #e7eaf6;
+    height: 20px;
+}
+
+.borde-paf{
+    background-color:    #e7eaf6;
+    height: 1px;
+}
+
+.borde-n{
+    background-color:   black;
+    height: 20px;
+}
+
+
+#Link img{
+    background-color: white;
+    border-radius: 30%;
+}
+
+.container_res{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.box__res{
+    color:black;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+
+    font-size: 30px;
+}
+
+.graf{
+    width: 250px;
+    height: 250px;
+    align-self: center;
+}
+
+.lista{
+    padding-inline:  5%;
+}
 
