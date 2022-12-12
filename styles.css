@@ -162,17 +162,17 @@ footer .fin{
 
 #Resultados .container_res{
     display: flex;
+    flex-direction:row;
     justify-content: space-between;
-    column-gap: 10%;
-    width: 1200px;
+    column-gap:3%;
     object-fit: cover;
+    margin-inline: 20px;
 
 }
 
 .box__res{
     color:black;
     width: 400px;
-    display: grid;
     text-align: center;
     padding-inline: 3%;
     font-size: 30px;
@@ -186,9 +186,8 @@ footer .fin{
     width: 250px;
     height: 250px;
     padding-top: 10px;
+    margin-left: 25px;
     justify-content: center;
-    padding-left: auto;
-    padding-right: auto;
 
     
 }
