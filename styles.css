@@ -173,14 +173,11 @@ footer .fin{
     color:black;
     width: 400px;
     display: grid;
-    justify-content: center;
     text-align: center;
     padding-inline: 3%;
     font-size: 30px;
     background-color:    #c0c9ee;
-    margin-left: 3%;
-   
-    
+    margin-left: 40px;
     
 }
 
